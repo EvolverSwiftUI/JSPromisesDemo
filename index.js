@@ -89,3 +89,27 @@ console.log(myString);
 console.log(myString.trim());
 console.log(myString.trim().slice(0,3));
 console.log(myString.trim().toUpperCase());
+
+// SCOPE
+/*
+1. Global Scope
+2. Block Scope
+*/
+
+// Block Scope
+/*
+If a variable is declared using const or let within a curly brace
+then it is said to be defined in the block scope.
+eg:
+    1. if...else.
+    2. function() {}
+    3. switch
+    4. for...of
+    ...............many more.
+*/
+
+// Global Scope
+/*
+if a variable is declared outside of function or any curly braces
+then it is said to be defined in the global scope.
+*/
