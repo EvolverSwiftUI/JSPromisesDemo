@@ -67,3 +67,25 @@ myPromise().then((fromResolve) => {
     console.log(fromReject);
 });
 
+// Async and Await
+
+const url2 = "https://jsonplaceholder.typicode.com/todos/2";
+const doNetworkCall = async () => {
+    try {
+        const response = await fetch(url2);
+        const jsonData = await response.json();
+        console.log(jsonData);    
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+const ayncPromise = doNetworkCall();
+console.log(ayncPromise);
+
+// String manipulations
+const myString = "    Hello World    ";
+console.log(myString);
+console.log(myString.trim());
+console.log(myString.trim().slice(0,3));
+console.log(myString.trim().toUpperCase());
